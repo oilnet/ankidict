@@ -1,0 +1,8 @@
+%table#results
+  %tr
+    %th{:lang => :de} Deutsch
+    %th{:lang => :ar} عربي
+  = render(:partial => 'item', :collection => @notes)
+  - if @notes.length == 0
+    %tr
+      %td{:colspan => 2} Keine Suchergebnisse.
