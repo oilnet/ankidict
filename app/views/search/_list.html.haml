@@ -2,6 +2,7 @@
   %tr
     %th{:lang => :de} Deutsch
     %th{:lang => :ar} عربي
+    %th{:lang => :en} Tags
   = render(:partial => 'item', :collection => @notes)
   - if @notes.length == 0
     %tr
