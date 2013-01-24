@@ -1,0 +1,1 @@
+Ruby on Rails application to scratch a little itch of mine. I wanted to be able to look up my Arabic vocabulary as comfortably as possible from a web browser. You can use the dictionary under http://ankidict.weitnahbei.de/.
