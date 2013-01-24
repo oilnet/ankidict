@@ -1,12 +1,13 @@
 !!!
 %html
   %head
-    %title Jonathan's Ankidict
+    %title Jonathans Ankidict
     = stylesheet_link_tag    "application", :media => "all"
     = javascript_include_tag "application"
     = csrf_meta_tags
   %body
-    %h1 Ankidict Wörterbuch Arabisch-Deutsch
+    %h1 Wörterbuch Arabisch-Deutsch
+    %h2 Entnommen aus "Modernes Hocharabisch"
     = yield
     #footer
       Geschrieben und betrieben von <a href="http://weitnahbei.de">Weitnahbei</a>. Vokabular Copyright (C) 2010 Prof. Dr. Eckehard Schulz.
