@@ -1,4 +1,3 @@
 %tr
-  %td.source_lang{:lang => :de}= item.source_lang.html_safe
-  %td.target_lang{:lang => :ar}= item.target_lang.html_safe
-  %td.tags{:lang => :en}= item.tags
+  %td.source_lang{:lang => :de}= link_to(item.de.html_safe, :action => :details, :id => item.id)
+  %td.target_lang{:lang => :ar}= link_to(item.ar_singular_or_perfect.html_safe, :action => :details, :id => item.id)

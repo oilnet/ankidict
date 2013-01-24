@@ -9,11 +9,19 @@ class Note < ActiveRecord::Base
   # in a single database column as a string separated by the Unicode
   # symbol as seen below.
 
-  def source_lang
+  def de
     flds.split(/\u001F/)[0]
   end
 
-  def target_lang
+  def ar_singular_or_perfect
     flds.split(/\u001F/)[1]
+  end
+
+  def ar_plural_or_imperfect
+    flds.split(/\u001F/)[2] || nil
+  end
+
+  def ar_verbal_noun
+    flds.split(/\u001F/)[3] || nil
   end
 end
