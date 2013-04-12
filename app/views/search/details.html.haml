@@ -2,10 +2,10 @@
   %table
     %tr
       %th Pl. (N.) od. Imp. (V.):
-      %td{:lang => :ar}= @note.ar_plural_or_imperfect.html_safe
+      %td{:lang => :ar}= @note.ar_plural_or_imperfect.html_safe if @note.ar_plural_or_imperfect
     %tr
       %th Verbalnomen so vorh.:
-      %td{:lang => :ar}= @note.ar_verbal_noun.html_safe
+      %td{:lang => :ar}= @note.ar_verbal_noun.html_safe if @note.ar_verbal_noun
     %tr
       %th Tags:
       %td.tags= @note.tags
