@@ -7,8 +7,11 @@
     = csrf_meta_tags
   %body
     %h1 Wörterbuch Arabisch-Deutsch
-    %h2 Entnommen aus "Modernes Hocharabisch"
+    %p 
+      13.4.2013: Fehler behoben, der zu Anzeigefehlern in der Detailansicht führte.
+      %br/
+      12.4.2013: Neue Version der Datenbank mit Errata und Vokabularhinzufügungen aus Wehr und anderen Quellen eingestellt. Die jeweilige Quelle ist aus den Tags ersichtlich.
     = yield
     #footer
-      Geschrieben und betrieben von <a href="http://weitnahbei.de">Weitnahbei</a>. Vokabular Copyright (C) 2010 Prof. Dr. Eckehard Schulz.
+      Geschrieben und betrieben von <a href="http://weitnahbei.de">Weitnahbei</a>.<br/>Copyright Vokabular zum größten Teil &copy; 2010 <a href="http://www.modern-standard-arabic.com">Prof. Dr. Eckehard Schulz</a>.
       = render(:partial => 'layouts/piwik')

@@ -2,16 +2,16 @@
   %table
     %tr
       %th Pl. (N.) od. Imp. (V.):
-      %td{:lang => :ar}= @note.ar_plural_or_imperfect
+      %td{:lang => :ar}= @note.ar_plural_or_imperfect.html_safe
     %tr
       %th Verbalnomen so vorh.:
-      %td{:lang => :ar}= @note.ar_verbal_noun
+      %td{:lang => :ar}= @note.ar_verbal_noun.html_safe
     %tr
       %th Tags:
       %td.tags= @note.tags
   %p
-    = link_to(image_tag('/images/wiktionary.png'), "http://de.wiktionary.org/wiki/#{@note.ar_singular_or_perfect}", :title => 'Wiktionary', :target => :new)
-    = link_to(image_tag('/images/wikipedia.png'), "http://de.wikipedia.org/wiki/#{@note.de}", :title => 'Wikipedia', :target => :new)
-    = link_to(image_tag('/images/google.png'), "http://www.google.de/?q=#{@note.de}", :title => 'Google', :target => :new)
-    = link_to(image_tag('/images/lessan.png'), "http://www.lessan.org/de/#{@note.ar_singular_or_perfect}", :title => 'Lessan', :target => :new)
-    = link_to(image_tag('/images/arabdict.png'), "http://www.arabdict.com/deutsch-arabisch/#{@note.ar_singular_or_perfect}", :title => 'Arabdict', :target => :new)
+    = link_to(image_tag('/images/wiktionary.png'), "http://de.wiktionary.org/wiki/#{sanitize(@note.ar_singular_or_perfect, :tags=>[])}", :title => 'Wiktionary', :target => :new)
+    = link_to(image_tag('/images/wikipedia.png'), "http://de.wikipedia.org/wiki/#{sanitize(@note.de, :tags=>[])}", :title => 'Wikipedia', :target => :new)
+    = link_to(image_tag('/images/google.png'), "http://www.google.de/?q=#{sanitize(@note.de, :tags=>[])}", :title => 'Google', :target => :new)
+    = link_to(image_tag('/images/lessan.png'), "http://www.lessan.org/de/#{sanitize(@note.ar_singular_or_perfect, :tags=>[])}", :title => 'Lessan', :target => :new)
+    = link_to(image_tag('/images/arabdict.png'), "http://www.arabdict.com/deutsch-arabisch/#{sanitize(@note.ar_singular_or_perfect, :tags=>[])}", :title => 'Arabdict', :target => :new)
