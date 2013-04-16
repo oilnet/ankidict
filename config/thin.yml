@@ -1,5 +1,5 @@
 ---
-chdir: /home/muaddib/www/ankidict.weitnahbei.de/installations/ankidict_arde-dear
+chdir: /home/muaddib/www/dict.weitnahbei.de/installations/ankidict_arde-dear
 environment: development
 address: 127.0.0.1
 port: 47123
