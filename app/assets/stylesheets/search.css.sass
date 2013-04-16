@@ -14,21 +14,45 @@ body
   padding: 1em 0 0 2em
   a
     outline: 0
+  a, a:visited
+    color: #006666
+  a:active, a:hover
+    color: #fa3333
+  max-width: 800px
+
+#header-background
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAANUlEQVQYlWMImjmzgQEJBM2c2YBNjAGXAIYkPgmCJmE1GZsirIqJVki01SR5Bpen8OrCFeAAFpxIkaHIIrUAAAAASUVORK5CYII=) repeat
+  width: 100%
+  height: 108px
+  position: absolute
+  top: 35px
+  left: 0
+  z-index: -1
+  border-top: 1px solid #b2d1d1
+  border-bottom: 1px solid #b2d1d1
 
 h1
-  margin-bottom: 0
+  margin-bottom: .35em
+  color: #0d3333
+  text-shadow: 2px 2px 1px #3e6b6b
+  font-family: Georgia, Arial
 h2
   margin-top: 0
   margin-bottom: 1.5em
   font-size: 95%
   font-weight: normal
-p
-  font-size: 80%
-  font-style: italic
-  margin: 2.5em
+
+form
+  background-color: white
+  width: 320px
+  padding: 3px
+  border: 1px solid #519999
+  margin-left: .25em
+  font-family: Arial
+  font-size: 14px
 
 table#results
-  margin: 1em
+  margin: 2em 0 0 .25em
   border: 1px solid #ccc
   border-collapse: collapse
   th, td
@@ -60,3 +84,7 @@ table#results
 #footer
   font-size: 75%
   margin-top: 15em
+  h4
+    margin-bottom: 1em
+  #news
+    font-style: italic
