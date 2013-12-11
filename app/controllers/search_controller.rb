@@ -1,8 +1,10 @@
 class SearchController < ApplicationController
   def index
+    string = params[:q].strip
+    string = ActiveRecord::Arabic.clean(string)
     @notes = Note.where(
       "flds LIKE :q OR STRIP_ARABIC_DIACRITICS(flds) LIKE :q OR tags LIKE :q", 
-      :q => "%#{params[:q].strip}%").order('flds DESC') unless params[:q].blank?
+      :q => "%#{string}%").order('flds ASC') unless params[:q].blank?
   end
 
   def details
