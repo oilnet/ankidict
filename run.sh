@@ -1,7 +1,7 @@
 #!/bin/bash
 
 HOMEDIR="/home/nimr"
-RUNDIR="$HOMEDIR/www/dict.weitnahbei.de/installations/ankidict_arde-dear"
+RUNDIR="$HOMEDIR/www/dict.weitnahbei.de:2001/installations/ankidict_arde-dear"
 DAEMON="$HOMEDIR/.rvm/bin/ruby193_rails32_thin"
 CONFIG=" -C config/thin.yml"
 

@@ -1,5 +1,5 @@
 ---
-chdir: /home/nimr/www/dict.weitnahbei.de/installations/ankidict_arde-dear
+chdir: /home/nimr/www/dict.weitnahbei.de:2001/installations/ankidict_arde-dear
 environment: development
 address: 127.0.0.1
 port: 2001
@@ -8,7 +8,6 @@ log: log/thin.log
 pid: tmp/pids/thin.pid
 max_conns: 1024
 max_persistent_conns: 100
-require: []
 wait: 30
 daemonize: true
 user: nimr
