@@ -1,5 +1,5 @@
 ---
-chdir: /home/nimr/www/dict.weitnahbei.de:2001/installations/ankidict_arde-dear
+chdir: /home/jrs/www/dict.weitnahbei.de:2001/installations/ankidict_arde-dear
 environment: development
 address: 127.0.0.1
 port: 2001
@@ -10,5 +10,5 @@ max_conns: 1024
 max_persistent_conns: 100
 wait: 30
 daemonize: true
-user: nimr
+user: jrs
 group: users
