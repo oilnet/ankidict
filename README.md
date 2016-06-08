@@ -1,1 +1,3 @@
-Ruby on Rails application to scratch a little itch of mine. I wanted to be able to look up my Arabic vocabulary as comfortably as possible from a web browser. You can use the dictionary under http://ankidict.weitnahbei.de/.
+Web application to access Anki collections (i.e., SQLite3 databases as used by 
+Anki 2.0). 38 hours of work so far. Not really maintained anymore but latest 
+version can be accessed at https://dict.weitnahbei.de.
